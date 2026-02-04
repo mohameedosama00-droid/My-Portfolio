@@ -135,4 +135,17 @@ footer {
 .hover-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+
+}
+.typing{
+    font-size: 18px;
+    color: #94a3b8;
+}
+#typing-text::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
 }
