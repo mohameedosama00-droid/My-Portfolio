@@ -149,9 +149,35 @@ footer {
 @keyframes blink {
     50% { opacity: 0; }
 }
-@media (min-width: 480px)&(max-width: 768px){
-  .animated-element {
-    animation: none;
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  section {
+    padding: 40px 15px;
+  }
+  .skills ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .projects {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+  .project {
+    padding: 15px;
   }
 }
 
