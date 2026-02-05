@@ -159,6 +159,7 @@ footer {
 }
 
 /* Mobile */
+/* Mobile Fix */
 @media (max-width: 640px) {
   .hero {
     padding: 60px 15px;
@@ -170,11 +171,11 @@ footer {
     padding: 40px 15px;
   }
   .skills ul {
-    flex-direction: column;
+    flex-direction: column; /* خلي الـ skills عمودي */
     gap: 10px;
   }
   .projects {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr; /* خلي المشاريع عمود واحد */
   }
   .project {
     padding: 15px;
